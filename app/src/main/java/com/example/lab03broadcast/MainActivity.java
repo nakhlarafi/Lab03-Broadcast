@@ -45,7 +45,8 @@ public class MainActivity extends AppCompatActivity {
         @Override
         public void onReceive(Context context, Intent intent) {
             String receivedText = intent.getStringExtra("com.example.lab03broadcast.EXTRA_TEXT");
-            textView.setText(receivedText);
+            //textView.setText(receivedText);
+            Toast.makeText(context,receivedText,Toast.LENGTH_SHORT).show();
         }
     };
 
